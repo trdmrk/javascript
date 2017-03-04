@@ -1,0 +1,59 @@
+<style type='text/css'>
+/* ONLY IN PAGE
+   ======================================= */
+h1.entry-title{font-size:20px;color:#666;padding:10px 0;margin:0 0 15px;border-bottom:2px solid #e6e8e8;text-transform:uppercase;letter-spacing:1.5px}
+.sort_list{text-align:center;word-break:break-all;line-height:2em;display:block;clear:both}
+.sort_list a{background:#fd705e;color:#ffffff;margin:0 .3em;padding:.2em.6em.3em;font-size:100%;border-radius:.25em;font-weight:bold}
+.sort_list a:hover{background:#363636}
+.komik_kolom{width:50%;padding:0 5px;float:left}
+.komik_style{background:rgba(7, 158, 82, 0.2);padding:.3em;margin:.5em 0}
+.komik_style a{color:#333;font-weight:bold}
+.komik_style a:hover{color:#4C4C4C}
+.komik_style em{font-weight:bold}
+.komik_style ul{list-style-type: none;margin:.2em 0 .3em 1em}
+.komik_style li{line-height:1em;position:relative;padding-left: 20px;padding-top:6px;padding-bottom:6px;margin:0}
+.komik_style li:before{position:absolute;top:3px;left:0;content: url(&#39;https://3.bp.blogspot.com/-d3R5QC5r6XI/WJbQPV1c7kI/AAAAAAAAAHg/loneUHtqFPgIUsHLtTzYmxsH7y7l_JnowCLcB/s1600/manga.png&#39;)}
+@media (max-width:768px){.komik_kolom{width:100% !important}}
+/* Project Page */
+#novellist_post{margin:0 -10px}
+.novelist_item{padding:0 10px 15px}
+.novelist_item h3{font-size:13px;text-align:center;color:#FFF;line-height:1.2;position:absolute;bottom:0;background:rgba(0,0,0,0.5);margin:0;width:100%;left:0;padding:10px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;letter-spacing:.1px}
+.novelist_item>a{position:relative;display:block}
+.novelist_item:hover h3{white-space:normal;color:#FBE9B2}
+#novellist_nav{clear:both;display:block;margin:20px auto 0;text-align:center}
+#novellist_nav>a,#novellist_nav>span{display:inline-block;border:1px solid #ccc;padding:5px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.2px;color:#666;min-width:150px;margin:0 10px 5px;}
+#novellist_nav>a:hover{border-color:#1f6cb0;color:#1f6cb0}
+#novellist_nav>span{color:#999;text-decoration:line-through}
+.novellist_load{margin:0 10px;background:#eee;padding:15px;display:block;width:100%;font-size:15px;text-align:center;border-radius:3px}
+/* Schedule Page */
+#schedule-wrapper{margin:0 -10px}
+.schedule-box.red{border-top-color:#d83939;text-decoration:line-through}
+.schedule-box.red:before{content:"DROP";background:#d83939}
+.schedule-box.green{border-top-color:#66b539}
+.schedule-box.green:before{content:"SPONSORED";background:#66b539}
+.schedule-box:before{content:"REGULAR";display:inline-block;font-size:12px;background:#1f6cb0;margin:auto;color:#fff;line-height:20px;letter-spacing:1px;padding:0 10px;text-align:center;font-weight:700;border-radius:3px;margin-bottom:5px}
+.schedule-box b{font-size:200%;white-space:nowrap;text-overflow:ellipsis;letter-spacing:.4px;line-height:1;display:block;margin:3px 0}
+.schedule-box i{font-style:normal;margin:0;font-size:12px;color:#999;font-weight:700;letter-spacing:.5px}
+.schedule-box span{display:block;line-height:1.4;background:#f1f1f3;padding:10px;margin:15px -15px -15px -15px;height:100%;border-top:1px solid #dee0e8;font-size:15px}
+.schedule-box br{display:none}
+.schedule-box{float:left;border:1px solid #ddd;width:18%;text-align:center;margin:1%;padding:15px;line-height:1.5;overflow:hidden;border-top:6px solid #1f6cb0}
+/* Staff Page */
+.staff-page br{display:none}
+.staff-item{float:left;width:23%;margin:0 1% 2%;border:1px solid #ddd;padding:15px;position:relative;overflow:hidden;background:#1f6cb0}
+.staff-box b{display:block;font-size:20px;text-transform:uppercase;letter-spacing:.5px;font-weight:400}
+.staff-box i{font-style:normal;text-transform:uppercase;display:block;font-size:13px;font-weight:700;letter-spacing:.5px;margin:3px 0 5px}
+.staff-desc{display:block;background:#f3f3f7;padding:15px;border-top:1px solid #dfe0e8;text-align:center;margin:15px -16px -16px;position:relative;font-size:15px;line-height:1.6;}
+.staff-page{margin:0 -10px}
+.staff-thumb img{display:block;margin:auto;position:relative;width:100%}
+.staff-thumb{width:100%;text-align:center;overflow:hidden;margin-right:15px;position:absolute;left:0;top:0;opacity:0.5}
+.staff-box{line-height:1.3;text-align:center;position:relative;padding:13px 0;color:#FFF}
+.staff-item .staff-box:after{display:inline-block;font-weight:700;font-size:13px;padding:1px 10px 0;color:#fff;line-height:20px;border-radius:3px;content:"ACTIVE";background:#66b539}
+.staff-item.drop .staff-box:after{content:"INACTIVE";background:#d84444}
+.staff-item.drop{background:#c33737}
+.staff-item.drop b{text-decoration:line-through}
+.staff-item.hiatus .staff-box:after{content:"HIATUS";background:#e2983b}
+.staff-item.hiatus{background:#c39b51}
+.staff-item.unknown .staff-box:after{content:"UNKNOWN";background:#666}
+.staff-item.unknown{background:#666}
+@media screen and (max-width:992px){.schedule-box{width:23%}.staff-item{width:31%}}@media screen and (max-width:768px){.schedule-box,.staff-item{width:31%}}@media screen and (max-width:640px){.novelist_item{width:33.33333%}.novelist_item img{width:100%}.staff-item{width:48%}}@media screen and (max-width:480px){.schedule-box,.staff-item{width:48%}.novelist_item{width:50%}#novellist_nav>a,#novellist_nav>span{display:block}}@media screen and (max-width:320px){.novelist_item,.staff-item,.schedule-box{width:100%}}
+</style>
