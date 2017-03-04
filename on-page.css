@@ -1,4 +1,3 @@
-<style type='text/css'>
 /* ONLY IN PAGE
    ======================================= */
 h1.entry-title{font-size:20px;color:#666;padding:10px 0;margin:0 0 15px;border-bottom:2px solid #e6e8e8;text-transform:uppercase;letter-spacing:1.5px}
@@ -56,4 +55,3 @@ h1.entry-title{font-size:20px;color:#666;padding:10px 0;margin:0 0 15px;border-b
 .staff-item.unknown .staff-box:after{content:"UNKNOWN";background:#666}
 .staff-item.unknown{background:#666}
 @media screen and (max-width:992px){.schedule-box{width:23%}.staff-item{width:31%}}@media screen and (max-width:768px){.schedule-box,.staff-item{width:31%}}@media screen and (max-width:640px){.novelist_item{width:33.33333%}.novelist_item img{width:100%}.staff-item{width:48%}}@media screen and (max-width:480px){.schedule-box,.staff-item{width:48%}.novelist_item{width:50%}#novellist_nav>a,#novellist_nav>span{display:block}}@media screen and (max-width:320px){.novelist_item,.staff-item,.schedule-box{width:100%}}
-</style>
