@@ -1,18 +1,6 @@
 /* ONLY IN PAGE
    ======================================= */
 h1.entry-title{font-size:20px;color:#666;padding:10px 0;margin:0 0 15px;border-bottom:2px solid #e6e8e8;text-transform:uppercase;letter-spacing:1.5px}
-.sort_list{text-align:center;word-break:break-all;line-height:2em;display:block;clear:both}
-.sort_list a{background:#fd705e;color:#ffffff;margin:0 .3em;padding:.2em.6em.3em;font-size:100%;border-radius:.25em;font-weight:bold}
-.sort_list a:hover{background:#363636}
-.komik_kolom{width:50%;padding:0 5px;float:left}
-.komik_style{background:rgba(7, 158, 82, 0.2);padding:.3em;margin:.5em 0}
-.komik_style a{color:#333;font-weight:bold}
-.komik_style a:hover{color:#4C4C4C}
-.komik_style em{font-weight:bold}
-.komik_style ul{list-style-type: none;margin:.2em 0 .3em 1em}
-.komik_style li{line-height:1em;position:relative;padding-left: 20px;padding-top:6px;padding-bottom:6px;margin:0}
-.komik_style li:before{position:absolute;top:3px;left:0;content: url(&#39;https://3.bp.blogspot.com/-d3R5QC5r6XI/WJbQPV1c7kI/AAAAAAAAAHg/loneUHtqFPgIUsHLtTzYmxsH7y7l_JnowCLcB/s1600/manga.png&#39;)}
-@media (max-width:768px){.komik_kolom{width:100% !important}}
 /* Project Page */
 #novellist_post{margin:0 -10px}
 .novelist_item{padding:0 10px 15px}
