@@ -3,15 +3,15 @@
     var roulette = {
     	isToggle : false,
     	isPeriod : 0,
-        leftToken : 9999,
+        leftToken2 : 9999,
         result : null,
-        goSpin : function () {
+        goSpin2 : function () {
         	if (1 > 0) {
         		/*if (roulette.isPeriod < 1) {
         			alert("Masa event telah berakhir.");
         			return;
         		}*/
-        		if (roulette.leftToken > 0) {
+        		if (roulette.leftToken2 > 0) {
         			$(".dim_block").show();
 
 	               	$.ajax({
@@ -31,14 +31,14 @@
 	        					if (parseInt(data.resultCode) == 1) {
 	        						startSpin();
 	        						//$(".win").show();
-	                                roulette.leftToken = roulette.leftToken - 1;
-	                                $("#lefttoken").html(roulette.leftToken);
+	                                roulette.leftToken2 = roulette.leftToken2 - 1;
+	                                $("#leftToken2").html(roulette.leftToken2);
 	        					}
-	        					else if (parseInt(data.resultCode) == 0) {
+	        					else if (parseInt(data.resultCode) == 1) {
 	        						startSpin();
 	        						//$(".losing").show();
-	        						roulette.leftToken = roulette.leftToken - 1;
-	        						$("#lefttoken").html(roulette.leftToken);
+	        						roulette.leftToken2 = roulette.leftToken2 - 1;
+	        						$("#leftToken2").html(roulette.leftToken2);
 	        					}
 	        					else if (parseInt(data.resultCode) < 0) {
 	        						alert("Kesempatan sudah habis.");
