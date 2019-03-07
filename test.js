@@ -1,21 +1,21 @@
 <script type="text/javascript">
 //<![CDATA[
-    var roulette = {
+    var roulette2 = {
     	isToggle : false,
     	isPeriod : 0,
         leftToken2 : 9999,
         result : null,
         goSpin2 : function () {
         	if (1 > 0) {
-        		/*if (roulette.isPeriod < 1) {
+        		/*if (roulette2.isPeriod < 1) {
         			alert("Masa event telah berakhir.");
         			return;
         		}*/
-        		if (roulette.leftToken2 > 0) {
+        		if (roulette2.leftToken2 > 0) {
         			$(".dim_block").show();
 
 	               	$.ajax({
-	            	    url: "/event/roulette/process",
+	            	    url: "/event/roulette2/process",
 	        			dataType : "json",
 	        			type: "GET",
 	        			//data:  "idx="+ idx,
@@ -26,19 +26,19 @@
 								$(".win").hide();
 								$(".losing").hide();
 								
-								roulette.result = data;
+								roulette2.result = data;
 								
 	        					if (parseInt(data.resultCode) == 1) {
 	        						startSpin();
 	        						//$(".win").show();
-	                                roulette.leftToken2 = roulette.leftToken2 - 1;
-	                                $("#leftToken2").html(roulette.leftToken2);
+	                                roulette2.leftToken2 = roulette2.leftToken2 - 1;
+	                                $("#leftToken2").html(roulette2.leftToken2);
 	        					}
 	        					else if (parseInt(data.resultCode) == 1) {
 	        						startSpin();
 	        						//$(".losing").show();
-	        						roulette.leftToken2 = roulette.leftToken2 - 1;
-	        						$("#leftToken2").html(roulette.leftToken2);
+	        						roulette2.leftToken2 = roulette2.leftToken2 - 1;
+	        						$("#leftToken2").html(roulette2.leftToken2);
 	        					}
 	        					else if (parseInt(data.resultCode) < 0) {
 	        						alert("Kesempatan sudah habis.");
@@ -72,54 +72,54 @@
     };
    
     function setResult() {
-    	$("#voucher").html(roulette.result.voucher).hide();
+    	$("#voucher").html(roulette2.result.voucher).hide();
     	$("#voucher_notice").hide();
-    	if (parseInt(roulette.result.resultCode) == 1) {
-    		switch (parseInt(roulette.result.prizeCode)) {
+    	if (parseInt(roulette2.result.resultCode) == 1) {
+    		switch (parseInt(roulette2.result.prizeCode)) {
         	case 1: 
         		$("#prize_name").html("Tiket pesawat + Hotel PBWC 2019");
-        		$("#prize_image").attr("src", "/images/event/2018/03_roulette/prize_ticket.png");
+        		$("#prize_image").attr("src", "/images/event/2018/03_roulette2/prize_ticket.png");
         		$("#prize_image").attr("alt", "Tiket pesawat + Hotel PBWC 2019");
         		break;
         	case 2: 
         		$("#prize_name").html("Custom Point Blank Bike Helmet");
-        		$("#prize_image").attr("src", "/images/event/2018/03_roulette/prize_helmet.png");
+        		$("#prize_image").attr("src", "/images/event/2018/03_roulette2/prize_helmet.png");
         		$("#prize_image").attr("alt", "Custom Point Blank Bike Helmet");
         		break;
         	case 3: 
         		$("#prize_name").html("Custom Point Blank Bike Jacket");
-        		$("#prize_image").attr("src", "/images/event/2018/03_roulette/prize_jacket.png");
+        		$("#prize_image").attr("src", "/images/event/2018/03_roulette2/prize_jacket.png");
         		$("#prize_image").attr("alt", "Custom Point Blank Bike Jacket");
         		break;
         	case 4: 
         		$("#prize_name").html("Custom Point Blank T-shirts");
-        		$("#prize_image").attr("src", "/images/event/2018/03_roulette/prize_tshirts.png");
+        		$("#prize_image").attr("src", "/images/event/2018/03_roulette2/prize_tshirts.png");
         		$("#prize_image").attr("alt", "Point Blank T-shirts");
         		break;
         	case 5: 
         		$("#prize_name").html("Custom Point Blank Cap");
-        		$("#prize_image").attr("src", "/images/event/2018/03_roulette/prize_cap.png");
+        		$("#prize_image").attr("src", "/images/event/2018/03_roulette2/prize_cap.png");
         		$("#prize_image").attr("alt", "Point Blank Hat");
         		break;
         	case 6: 
         		$("#prize_name").html("PB Helmet in game 3D");
-        		$("#prize_image").attr("src", "/images/event/2018/03_roulette/prize_helmet_3d.png");
+        		$("#prize_image").attr("src", "/images/event/2018/03_roulette2/prize_helmet_3d.png");
         		$("#prize_image").attr("alt", "PB Helmet in game 3D");
-        		$("#voucher").html(roulette.result.voucher).show();
+        		$("#voucher").html(roulette2.result.voucher).show();
 	    		$("#voucher_notice").show();
         		break;
         	case 7: 
         		$("#prize_name").html("PB Helmet in game 7D");
-        		$("#prize_image").attr("src", "/images/event/2018/03_roulette/prize_helmet_7d.png");
+        		$("#prize_image").attr("src", "/images/event/2018/03_roulette2/prize_helmet_7d.png");
         		$("#prize_image").attr("alt", "PB Helmet in game 7D");
-        		$("#voucher").html(roulette.result.voucher).show();
+        		$("#voucher").html(roulette2.result.voucher).show();
 	    		$("#voucher_notice").show();
         		break;
         	case 8: 
         		$("#prize_name").html("PB Helmet in game 30D");
-        		$("#prize_image").attr("src", "/images/event/2018/03_roulette/prize_helmet_30d.png");
+        		$("#prize_image").attr("src", "/images/event/2018/03_roulette2/prize_helmet_30d.png");
         		$("#prize_image").attr("alt", "PB Helmet in game 30D");
-        		$("#voucher").html(roulette.result.voucher).show();
+        		$("#voucher").html(roulette2.result.voucher).show();
 	    		$("#voucher_notice").show();
         		break;
         	}
@@ -136,7 +136,7 @@
     
     function setPrizeList() {
        	$.ajax({
-    	    url: "/event/roulette/prize",
+    	    url: "/event/roulette2/prize",
 			dataType : "json",
 			type: "GET",
 			contentType : "application/x-www-form-urlencoded;charset=UTF-8",
@@ -224,7 +224,7 @@
     }
 
     // Set the image source, once complete this will trigger the onLoad callback (above).
-    loadedImg.src = "/images/event/2018/03_roulette/roulette.png";
+    loadedImg.src = "/images/event/2018/03_roulette2/roulette2.png";
 
     // Vars used by the code in this page to do power controls.
     let wheelPower    = 0;
@@ -252,8 +252,8 @@
             document.getElementById('spin_button').className = "";
 
           	//prize setting;
-          	if (parseInt(roulette.result.resultCode) == 1) {
-            	theWheel.animation.stopAngle = roulette.result.angle;
+          	if (parseInt(roulette2.result.resultCode) == 1) {
+            	theWheel.animation.stopAngle = roulette2.result.angle;
           	}
           	else {
           		theWheel.animation.stopAngle = 340;
